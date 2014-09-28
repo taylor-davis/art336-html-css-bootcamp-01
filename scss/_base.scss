@@ -19,10 +19,16 @@ h1 {
 } 
 
 h2 {
+    @include body-font-bold;
     line-height: 1.0;
     margin: 5px;
     padding: 5px;
     text-align: right;
+}
+
+h3, h4, h5 {
+    @include body-font-bold;
+    text-align: center;
 }
     
 body {
