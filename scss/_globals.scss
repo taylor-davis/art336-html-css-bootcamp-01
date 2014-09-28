@@ -14,3 +14,42 @@ Globals
     font-size: $size;
     font-size: calculateRem($size);
 }
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Orbitron-Bold'), url(http://fonts.gstatic.com/s/orbitron/v6/Y82YH_MJJWnsH2yUA5AuYbrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rokkitt'), url(http://fonts.gstatic.com/s/rokkitt/v8/RcB7dRNAX_8JE8zinU47YALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Rokkitt';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Rokkitt Bold'), local('Rokkitt-Bold'), url(http://fonts.gstatic.com/s/rokkitt/v8/Mef17w3J4CtS0lw4Wa_8r73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@mixin body-font-regular {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin body-font-bold {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin headline-font {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+}
